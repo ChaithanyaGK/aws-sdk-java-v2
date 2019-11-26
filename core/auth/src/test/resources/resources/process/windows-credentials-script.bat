@@ -7,7 +7,7 @@ ECHO "SecretAccessKey": "%2"
 IF NOT "%3"=="" (
     ECHO ,
     IF "%3"=="RANDOM_TOKEN" (
-        ECHO "SessionToken": "%RANDOM"
+        ECHO "SessionToken": "%RANDOM%"
     ) ELSE (
         ECHO "SessionToken": "%3"
     )
